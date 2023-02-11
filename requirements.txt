@@ -83,7 +83,6 @@ mediapipe==0.9.1.0
 mkl-fft
 mkl-service==2.4.0
 mlflow
-mlxtend
 multidict==6.0.4
 multimethod==1.9.1
 murmurhash==1.0.9
