@@ -1,0 +1,1430 @@
+2023-02-08 23:29:54,720:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-02-08 23:29:54,720:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-02-08 23:29:54,720:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-02-08 23:29:54,720:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-02-08 23:29:55,855:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-02-09 11:24:19,666:INFO:Initializing predict_model()
+2023-02-09 11:24:19,683:INFO:predict_model(estimator=   Dist_Wrist_F1  Dist_Wrist_F2  Dist_Wrist_F3  Dist_Wrist_F4  Dist_Wrist_F5  \
+0       0.005000       0.002000       0.001414       0.001000          0.000   
+1       0.005099       0.001414       0.001414       0.003606          0.003   
+
+   Dist_Wrist_F6  Dist_Wrist_F7  Dist_Wrist_F8  Dist_Wrist_F9  Dist_Wrist_F10  \
+0          0.001       0.003162       0.001000       0.002000        0.004472   
+1          0.003       0.003000       0.003162       0.001414        0.003606   
+
+   Dist_Wrist_F11  Dist_Wrist_F12  Dist_Wrist_F13  Dist_Wrist_F14  \
+0        0.003162        0.002236           0.001           0.000   
+1        0.002236        0.002236           0.001           0.001   
+
+   Dist_Wrist_F15  Dist_Wrist_F16  Dist_Wrist_F17  Dist_Wrist_F18  \
+0           0.001           0.001        0.001000        0.001000   
+1           0.001           0.001        0.001414        0.001414   
+
+   Dist_Wrist_F19  Dist_Wrist_F20  Dist_Wrist_F21  Dist_Wrist_F22  \
+0           0.000        0.001000        0.002000        0.000000   
+1           0.001        0.005099        0.001414        0.001414   
+
+   Dist_Wrist_F23  Dist_Wrist_F24  Dist_Wrist_F25  Dist_Thumb_F1  \
+0        0.002828        0.002828        0.005831       0.001414   
+1        0.002236        0.000000        0.001414       0.000000   
+
+   Dist_Thumb_F2  Dist_Thumb_F3  Dist_Thumb_F4  Dist_Thumb_F5  Dist_Thumb_F6  \
+0          0.003          0.001          0.003       0.001414       0.001414   
+1          0.002          0.003          0.001       0.002236       0.000000   
+
+   Dist_Thumb_F7  Dist_Thumb_F8  Dist_Thumb_F9  Dist_Thumb_F10  \
+0       0.002828          0.002          0.001        0.002828   
+1       0.001000          0.001          0.002        0.005099   
+
+   Dist_Thumb_F11  Dist_Thumb_F12  Dist_Thumb_F13  Dist_Thumb_F14  \
+0        0.003162           0.001        0.000000           0.001   
+1        0.001000           0.001        0.002236           0.001   
+
+   Dist_Thumb_F15  Dist_Thumb_F16  Dist_Thumb_F17  Dist_Thumb_F18  \
+0           0.001        0.001414        0.001000        0.001414   
+1           0.001        0.002236        0.002236        0.003606   
+
+   Dist_Thumb_F19  Dist_Thumb_F20  Dist_Thumb_F21  Dist_Thumb_F22  \
+0           0.000        0.000000        0.002000           0.001   
+1           0.002        0.004123        0.001414           0.001   
+
+   Dist_Thumb_F23  Dist_Thumb_F24  Dist_Thumb_F25  Dist_Index_F1  \
+0        0.000000        0.004472        0.002236       0.003606   
+1        0.002236        0.002000        0.001000       0.002000   
+
+   Dist_Index_F2  Dist_Index_F3  Dist_Index_F4  Dist_Index_F5  Dist_Index_F6  \
+0       0.003162       0.001000       0.003000       0.002236       0.001414   
+1       0.002236       0.004123       0.002236       0.002000       0.001414   
+
+   Dist_Index_F7  Dist_Index_F8  Dist_Index_F9  Dist_Index_F10  \
+0       0.002236       0.001000       0.002236        0.002236   
+1       0.002236       0.002236       0.002000        0.003606   
+
+   Dist_Index_F11  Dist_Index_F12  Dist_Index_F13  Dist_Index_F14  \
+0        0.003606        0.003162           0.002        0.001414   
+1        0.001414        0.001414           0.000        0.001000   
+
+   Dist_Index_F15  Dist_Index_F16  Dist_Index_F17  Dist_Index_F18  \
+0        0.001000           0.003        0.003000        0.000000   
+1        0.002236           0.001        0.002828        0.004472   
+
+   Dist_Index_F19  Dist_Index_F20  Dist_Index_F21  Dist_Index_F22  \
+0        0.002236        0.005099           0.002        0.004472   
+1        0.001414        0.003000           0.003        0.001000   
+
+   Dist_Index_F23  Dist_Index_F24  Dist_Index_F25  Dist_Middle_F1  \
+0        0.005385           0.002        0.004123        0.002000   
+1        0.004123           0.000        0.003162        0.002236   
+
+   Dist_Middle_F2  Dist_Middle_F3  Dist_Middle_F4  Dist_Middle_F5  \
+0        0.003162        0.001414        0.003162        0.001000   
+1        0.002236        0.003162        0.001414        0.002236   
+
+   Dist_Middle_F6  Dist_Middle_F7  Dist_Middle_F8  Dist_Middle_F9  \
+0        0.001414        0.001000        0.002236        0.002000   
+1        0.001000        0.002236        0.002828        0.001414   
+
+   Dist_Middle_F10  Dist_Middle_F11  Dist_Middle_F12  Dist_Middle_F13  \
+0         0.001414         0.002236         0.003162            0.001   
+1         0.005000         0.001000         0.001000            0.000   
+
+   Dist_Middle_F14  Dist_Middle_F15  Dist_Middle_F16  Dist_Middle_F17  \
+0         0.001414         0.002000         0.001000         0.001414   
+1         0.001414         0.001414         0.001414         0.002236   
+
+   Dist_Middle_F18  Dist_Middle_F19  Dist_Middle_F20  Dist_Middle_F21  \
+0         0.001000         0.002000         0.001414         0.002236   
+1         0.004243         0.004243         0.001414         0.003000   
+
+   Dist_Middle_F22  Dist_Middle_F23  Dist_Middle_F24  Dist_Middle_F25  \
+0         0.004123         0.002000          0.00922         0.007211   
+1         0.001000         0.002236          0.00100         0.002236   
+
+   Dist_Ring_F1  Dist_Ring_F2  Dist_Ring_F3  Dist_Ring_F4  Dist_Ring_F5  \
+0      0.003000      0.001000      0.001414      0.003000         0.000   
+1      0.002236      0.001414      0.003606      0.001414         0.001   
+
+   Dist_Ring_F6  Dist_Ring_F7  Dist_Ring_F8  Dist_Ring_F9  Dist_Ring_F10  \
+0         0.001      0.001000      0.001000      0.002000       0.002236   
+1         0.001      0.002236      0.002828      0.001414       0.005000   
+
+   Dist_Ring_F11  Dist_Ring_F12  Dist_Ring_F13  Dist_Ring_F14  Dist_Ring_F15  \
+0       0.003162       0.003606          0.000       0.001414       0.001000   
+1       0.002236       0.001000          0.001       0.002236       0.002236   
+
+   Dist_Ring_F16  Dist_Ring_F17  Dist_Ring_F18  Dist_Ring_F19  Dist_Ring_F20  \
+0       0.001000       0.001414          0.002       0.002236       0.001000   
+1       0.002236       0.003000          0.005       0.002000       0.002236   
+
+   Dist_Ring_F21  Dist_Ring_F22  Dist_Ring_F23  Dist_Ring_F24  Dist_Ring_F25  \
+0       0.002236       0.003162       0.002000       0.006083       0.006083   
+1       0.002000       0.000000       0.001414       0.002236       0.001000   
+
+   Dist_Pinky_F1  Dist_Pinky_F2  Dist_Pinky_F3  Dist_Pinky_F4  Dist_Pinky_F5  \
+0       0.003162       0.001000       0.002000       0.002236       0.001414   
+1       0.002000       0.001414       0.003162       0.003000       0.000000   
+
+   Dist_Pinky_F6  Dist_Pinky_F7  Dist_Pinky_F8  Dist_Pinky_F9  Dist_Pinky_F10  \
+0       0.001414       0.001000       0.001000       0.003000        0.002236   
+1       0.002000       0.004123       0.002236       0.003606        0.004472   
+
+   Dist_Pinky_F11  Dist_Pinky_F12  Dist_Pinky_F13  Dist_Pinky_F14  \
+0        0.003162        0.002828           0.001        0.001000   
+1        0.002000        0.002236           0.001        0.002828   
+
+   Dist_Pinky_F15  Dist_Pinky_F16  Dist_Pinky_F17  Dist_Pinky_F18  \
+0           0.001        0.001000        0.000000        0.001414   
+1           0.001        0.001414        0.002236        0.004243   
+
+   Dist_Pinky_F19  Dist_Pinky_F20  Dist_Pinky_F21  Dist_Pinky_F22  \
+0        0.001414        0.002000        0.001000        0.002236   
+1        0.001414        0.002236        0.002236        0.000000   
+
+   Dist_Pinky_F23  Dist_Pinky_F24  Dist_Pinky_F25  Dirt_Wrist_F1  \
+0        0.002236        0.003162           0.004       0.927295   
+1        0.004123        0.001414           0.001       1.373401   
+
+   Dirt_Wrist_F2  Dirt_Wrist_F3  Dirt_Wrist_F4  Dirt_Wrist_F5  Dirt_Wrist_F6  \
+0       1.570800      -0.785398       4.712390        4.71239        4.71239   
+1      -0.785398      -0.785398      -0.588003        1.57080        1.57080   
+
+   Dirt_Wrist_F7  Dirt_Wrist_F8  Dirt_Wrist_F9  Dirt_Wrist_F10  \
+0      -1.249046      -0.000000       4.712390        1.107149   
+1       4.712390       0.321751      -0.785398       -0.982794   
+
+   Dirt_Wrist_F11  Dirt_Wrist_F12  Dirt_Wrist_F13  Dirt_Wrist_F14  \
+0        1.249046       -0.463648         4.71239         4.71239   
+1        0.463648        1.107149         4.71239         1.57080   
+
+   Dirt_Wrist_F15  Dirt_Wrist_F16  Dirt_Wrist_F17  Dirt_Wrist_F18  \
+0             0.0          1.5708        4.712390        1.570800   
+1             0.0         -0.0000       -0.785398       -0.785398   
+
+   Dirt_Wrist_F19  Dirt_Wrist_F20  Dirt_Wrist_F21  Dirt_Wrist_F22  \
+0         4.71239        4.712390        4.712390        4.712390   
+1         0.00000       -1.373401        0.785398        0.785398   
+
+   Dirt_Wrist_F23  Dirt_Wrist_F24  Dirt_Wrist_F25  Dirt_Thumb_F1  \
+0       -0.785398       -0.785398       -1.030377      -0.785398   
+1        0.463648        4.712390       -0.785398       4.712390   
+
+   Dirt_Thumb_F2  Dirt_Thumb_F3  Dirt_Thumb_F4  Dirt_Thumb_F5  Dirt_Thumb_F6  \
+0           -0.0        4.71239        4.71239       0.785398      -0.785398   
+1            0.0        0.00000        4.71239      -1.107149       4.712390   
+
+   Dirt_Thumb_F7  Dirt_Thumb_F8  Dirt_Thumb_F9  Dirt_Thumb_F10  \
+0      -0.785398        4.71239        4.71239        0.785398   
+1       0.000000        4.71239       -0.00000       -1.373401   
+
+   Dirt_Thumb_F11  Dirt_Thumb_F12  Dirt_Thumb_F13  Dirt_Thumb_F14  \
+0        0.321751            -0.0        4.712390         0.00000   
+1        1.570800            -0.0       -1.107149         4.71239   
+
+   Dirt_Thumb_F15  Dirt_Thumb_F16  Dirt_Thumb_F17  Dirt_Thumb_F18  \
+0             0.0        0.785398        0.000000       -0.785398   
+1             0.0        1.107149        0.463648        0.588003   
+
+   Dirt_Thumb_F19  Dirt_Thumb_F20  Dirt_Thumb_F21  Dirt_Thumb_F22  \
+0         4.71239        4.712390        4.712390          1.5708   
+1         0.00000        1.325818        0.785398          1.5708   
+
+   Dirt_Thumb_F23  Dirt_Thumb_F24  Dirt_Thumb_F25  Dirt_Index_F1  \
+0        4.712390        0.463648        0.463648      -0.588003   
+1        0.463648        1.570800       -0.000000       1.570800   
+
+   Dirt_Index_F2  Dirt_Index_F3  Dirt_Index_F4  Dirt_Index_F5  Dirt_Index_F6  \
+0      -1.249046      -0.000000       4.712390      -1.107149      -0.785398   
+1       0.463648      -0.244979      -1.107149       4.712390       0.785398   
+
+   Dirt_Index_F7  Dirt_Index_F8  Dirt_Index_F9  Dirt_Index_F10  \
+0      -1.107149       4.712390       1.107149       -1.107149   
+1      -1.107149      -0.463648      -0.000000       -0.588003   
+
+   Dirt_Index_F11  Dirt_Index_F12  Dirt_Index_F13  Dirt_Index_F14  \
+0       -0.588003       -0.321751         1.57080        0.785398   
+1       -0.785398        0.785398         4.71239        0.000000   
+
+   Dirt_Index_F15  Dirt_Index_F16  Dirt_Index_F17  Dirt_Index_F18  \
+0        0.000000         4.71239        1.570800        4.712390   
+1       -1.107149        -0.00000        0.785398        0.463648   
+
+   Dirt_Index_F19  Dirt_Index_F20  Dirt_Index_F21  Dirt_Index_F22  \
+0       -1.107149       -1.373401        -0.00000        1.107149   
+1       -0.785398        4.712390         4.71239       -0.000000   
+
+   Dirt_Index_F23  Dirt_Index_F24  Dirt_Index_F25  Dirt_Middle_F1  \
+0       -1.190290        -0.00000       -0.244979        1.570800   
+1       -1.325818         4.71239        0.321751       -0.463648   
+
+   Dirt_Middle_F2  Dirt_Middle_F3  Dirt_Middle_F4  Dirt_Middle_F5  \
+0       -0.321751       -0.785398       -1.249046        4.712390   
+1        1.107149       -0.321751       -0.785398        1.107149   
+
+   Dirt_Middle_F6  Dirt_Middle_F7  Dirt_Middle_F8  Dirt_Middle_F9  \
+0       -0.785398       -0.000000        1.107149        4.712390   
+1       -0.000000       -1.107149       -0.785398       -0.785398   
+
+   Dirt_Middle_F10  Dirt_Middle_F11  Dirt_Middle_F12  Dirt_Middle_F13  \
+0        -0.785398        -0.463648        -0.321751          1.57080   
+1        -0.927295        -0.000000         1.570800          4.71239   
+
+   Dirt_Middle_F14  Dirt_Middle_F15  Dirt_Middle_F16  Dirt_Middle_F17  \
+0        -0.785398         4.712390         1.570800         0.785398   
+1        -0.785398        -0.785398         0.785398         1.107149   
+
+   Dirt_Middle_F18  Dirt_Middle_F19  Dirt_Middle_F20  Dirt_Middle_F21  \
+0         1.570800         4.712390        -0.785398         1.107149   
+1         0.785398        -0.785398         0.785398         4.712390   
+
+   Dirt_Middle_F22  Dirt_Middle_F23  Dirt_Middle_F24  Dirt_Middle_F25  ...  \
+0        -0.244979        -0.000000         0.708626         0.588003  ...   
+1         1.570800        -1.107149         1.570800         1.107149  ...   
+
+   Dist_mul_Dirt_Index_F1  Dist_mul_Dirt_Index_F2  Dist_mul_Dirt_Index_F3  \
+0               -0.002120               -0.003949                -0.00000   
+1                0.003142                0.001037                -0.00101   
+
+   Dist_mul_Dirt_Index_F4  Dist_mul_Dirt_Index_F5  Dist_mul_Dirt_Index_F6  \
+0                0.014137               -0.002476               -0.001111   
+1               -0.002476                0.009425                0.001111   
+
+   Dist_mul_Dirt_Index_F7  Dist_mul_Dirt_Index_F8  Dist_mul_Dirt_Index_F9  \
+0               -0.002476                0.004712                0.002476   
+1               -0.002476               -0.001037               -0.000000   
+
+   Dist_mul_Dirt_Index_F10  Dist_mul_Dirt_Index_F11  Dist_mul_Dirt_Index_F12  \
+0                -0.002476                -0.002120                -0.001017   
+1                -0.002120                -0.001111                 0.001111   
+
+   Dist_mul_Dirt_Index_F13  Dist_mul_Dirt_Index_F14  Dist_mul_Dirt_Index_F15  \
+0                 0.003142                 0.001111                 0.000000   
+1                 0.000000                 0.000000                -0.002476   
+
+   Dist_mul_Dirt_Index_F16  Dist_mul_Dirt_Index_F17  Dist_mul_Dirt_Index_F18  \
+0                 0.014137                 0.004712                 0.000000   
+1                -0.000000                 0.002221                 0.002073   
+
+   Dist_mul_Dirt_Index_F19  Dist_mul_Dirt_Index_F20  Dist_mul_Dirt_Index_F21  \
+0                -0.002476                -0.007003                -0.000000   
+1                -0.001111                 0.014137                 0.014137   
+
+   Dist_mul_Dirt_Index_F22  Dist_mul_Dirt_Index_F23  Dist_mul_Dirt_Index_F24  \
+0                 0.004951                -0.006410                     -0.0   
+1                -0.000000                -0.005466                      0.0   
+
+   Dist_mul_Dirt_Index_F25  Dist_mul_Dirt_Middle_F1  Dist_mul_Dirt_Middle_F2  \
+0                -0.001010                 0.003142                -0.001017   
+1                 0.001017                -0.001037                 0.002476   
+
+   Dist_mul_Dirt_Middle_F3  Dist_mul_Dirt_Middle_F4  Dist_mul_Dirt_Middle_F5  \
+0                -0.001111                -0.003949                 0.004712   
+1                -0.001017                -0.001111                 0.002476   
+
+   Dist_mul_Dirt_Middle_F6  Dist_mul_Dirt_Middle_F7  Dist_mul_Dirt_Middle_F8  \
+0                -0.001111                -0.000000                 0.002476   
+1                -0.000000                -0.002476                -0.002221   
+
+   Dist_mul_Dirt_Middle_F9  Dist_mul_Dirt_Middle_F10  \
+0                 0.009425                 -0.001111   
+1                -0.001111                 -0.004636   
+
+   Dist_mul_Dirt_Middle_F11  Dist_mul_Dirt_Middle_F12  \
+0                 -0.001037                 -0.001017   
+1                 -0.000000                  0.001571   
+
+   Dist_mul_Dirt_Middle_F13  Dist_mul_Dirt_Middle_F14  \
+0                  0.001571                 -0.001111   
+1                  0.000000                 -0.001111   
+
+   Dist_mul_Dirt_Middle_F15  Dist_mul_Dirt_Middle_F16  \
+0                  0.009425                  0.001571   
+1                 -0.001111                  0.001111   
+
+   Dist_mul_Dirt_Middle_F17  Dist_mul_Dirt_Middle_F18  \
+0                  0.001111                  0.001571   
+1                  0.002476                  0.003332   
+
+   Dist_mul_Dirt_Middle_F19  Dist_mul_Dirt_Middle_F20  \
+0                  0.009425                 -0.001111   
+1                 -0.003332                  0.001111   
+
+   Dist_mul_Dirt_Middle_F21  Dist_mul_Dirt_Middle_F22  \
+0                  0.002476                 -0.001010   
+1                  0.014137                  0.001571   
+
+   Dist_mul_Dirt_Middle_F23  Dist_mul_Dirt_Middle_F24  \
+0                 -0.000000                  0.006534   
+1                 -0.002476                  0.001571   
+
+   Dist_mul_Dirt_Middle_F25  Dist_mul_Dirt_Ring_F1  Dist_mul_Dirt_Ring_F2  \
+0                  0.004240              -0.000000              -0.000000   
+1                  0.002476               0.002476               0.001111   
+
+   Dist_mul_Dirt_Ring_F3  Dist_mul_Dirt_Ring_F4  Dist_mul_Dirt_Ring_F5  \
+0              -0.001111               0.014137               0.000000   
+1               0.002120              -0.001111               0.004712   
+
+   Dist_mul_Dirt_Ring_F6  Dist_mul_Dirt_Ring_F7  Dist_mul_Dirt_Ring_F8  \
+0              -0.000000              -0.000000               0.004712   
+1               0.004712              -0.001037              -0.002221   
+
+   Dist_mul_Dirt_Ring_F9  Dist_mul_Dirt_Ring_F10  Dist_mul_Dirt_Ring_F11  \
+0               0.009425               -0.001037               -0.001017   
+1              -0.001111               -0.003218               -0.001037   
+
+   Dist_mul_Dirt_Ring_F12  Dist_mul_Dirt_Ring_F13  Dist_mul_Dirt_Ring_F14  \
+0               -0.003544                     0.0               -0.001111   
+1                0.004712                     0.0               -0.002476   
+
+   Dist_mul_Dirt_Ring_F15  Dist_mul_Dirt_Ring_F16  Dist_mul_Dirt_Ring_F17  \
+0                0.004712                0.004712                0.001111   
+1               -0.001037                0.002476                0.004712   
+
+   Dist_mul_Dirt_Ring_F18  Dist_mul_Dirt_Ring_F19  Dist_mul_Dirt_Ring_F20  \
+0                0.003142               -0.002476                0.004712   
+1                0.003218                0.000000               -0.002476   
+
+   Dist_mul_Dirt_Ring_F21  Dist_mul_Dirt_Ring_F22  Dist_mul_Dirt_Ring_F23  \
+0                0.001037                0.001017               -0.000000   
+1                0.009425                0.000000               -0.001111   
+
+   Dist_mul_Dirt_Ring_F24  Dist_mul_Dirt_Ring_F25  Dist_mul_Dirt_Pinky_F1  \
+0                0.001005                0.001005               -0.001017   
+1               -0.001037               -0.000000                0.000000   
+
+   Dist_mul_Dirt_Pinky_F2  Dist_mul_Dirt_Pinky_F3  Dist_mul_Dirt_Pinky_F4  \
+0               -0.000000               -0.000000               -0.002476   
+1                0.001111                0.001017                0.000000   
+
+   Dist_mul_Dirt_Pinky_F5  Dist_mul_Dirt_Pinky_F6  Dist_mul_Dirt_Pinky_F7  \
+0                0.001111                0.001111                -0.00000   
+1                0.000000               -0.000000                -0.00101   
+
+   Dist_mul_Dirt_Pinky_F8  Dist_mul_Dirt_Pinky_F9  Dist_mul_Dirt_Pinky_F10  \
+0                0.001571                0.014137                 0.001037   
+1               -0.001037               -0.002120                -0.002073   
+
+   Dist_mul_Dirt_Pinky_F11  Dist_mul_Dirt_Pinky_F12  Dist_mul_Dirt_Pinky_F13  \
+0                -0.001017                -0.002221                 0.000000   
+1                 0.009425                -0.002476                 0.004712   
+
+   Dist_mul_Dirt_Pinky_F14  Dist_mul_Dirt_Pinky_F15  Dist_mul_Dirt_Pinky_F16  \
+0                 0.001571                 0.004712                 0.004712   
+1                -0.002221                 0.000000                 0.001111   
+
+   Dist_mul_Dirt_Pinky_F17  Dist_mul_Dirt_Pinky_F18  Dist_mul_Dirt_Pinky_F19  \
+0                 0.000000                 0.001111                 0.001111   
+1                 0.001037                 0.003332                 0.001111   
+
+   Dist_mul_Dirt_Pinky_F20  Dist_mul_Dirt_Pinky_F21  Dist_mul_Dirt_Pinky_F22  \
+0                 0.009425                -0.000000                 0.001037   
+1                -0.002476                -0.002476                 0.000000   
+
+   Dist_mul_Dirt_Pinky_F23  Dist_mul_Dirt_Pinky_F24  Dist_mul_Dirt_Pinky_F25  \
+0                -0.002476                -0.001017                     -0.0   
+1                -0.005466                 0.001111                     -0.0   
+
+   Dist_div_Dirt_Wrist_F1  Dist_div_Dirt_Wrist_F2  Dist_div_Dirt_Wrist_F3  \
+0                0.005392                0.001273                 -0.0018   
+1                0.003713               -0.001800                 -0.0018   
+
+   Dist_div_Dirt_Wrist_F4  Dist_div_Dirt_Wrist_F5  Dist_div_Dirt_Wrist_F6  \
+0                0.000212                 0.00000                0.000212   
+1               -0.006133                 0.00191                0.001910   
+
+   Dist_div_Dirt_Wrist_F7  Dist_div_Dirt_Wrist_F8  Dist_div_Dirt_Wrist_F9  \
+0               -0.002532                0.000000                0.000424   
+1                0.000637                0.009827               -0.001800   
+
+   Dist_div_Dirt_Wrist_F10  Dist_div_Dirt_Wrist_F11  Dist_div_Dirt_Wrist_F12  \
+0                 0.004039                 0.002532                -0.004823   
+1                -0.003669                 0.004823                 0.002020   
+
+   Dist_div_Dirt_Wrist_F13  Dist_div_Dirt_Wrist_F14  Dist_div_Dirt_Wrist_F15  \
+0                 0.000212                 0.000000                      0.0   
+1                 0.000212                 0.000637                      0.0   
+
+   Dist_div_Dirt_Wrist_F16  Dist_div_Dirt_Wrist_F17  Dist_div_Dirt_Wrist_F18  \
+0                 0.000637                 0.000212                 0.000637   
+1                 0.000000                -0.001800                -0.001800   
+
+   Dist_div_Dirt_Wrist_F19  Dist_div_Dirt_Wrist_F20  Dist_div_Dirt_Wrist_F21  \
+0                      0.0                 0.000212                 0.000424   
+1                      0.0                -0.003713                 0.001800   
+
+   Dist_div_Dirt_Wrist_F22  Dist_div_Dirt_Wrist_F23  Dist_div_Dirt_Wrist_F24  \
+0                   0.0000                -0.003601                -0.003601   
+1                   0.0018                 0.004823                 0.000000   
+
+   Dist_div_Dirt_Wrist_F25  Dist_div_Dirt_Thumb_F1  Dist_div_Dirt_Thumb_F2  \
+0                -0.005659                 -0.0018                     0.0   
+1                -0.001800                  0.0000                     0.0   
+
+   Dist_div_Dirt_Thumb_F3  Dist_div_Dirt_Thumb_F4  Dist_div_Dirt_Thumb_F5  \
+0                0.000212                0.000637                 0.00180   
+1                0.000000                0.000212                -0.00202   
+
+   Dist_div_Dirt_Thumb_F6  Dist_div_Dirt_Thumb_F7  Dist_div_Dirt_Thumb_F8  \
+0                 -0.0018               -0.003601                0.000424   
+1                  0.0000                0.000000                0.000212   
+
+   Dist_div_Dirt_Thumb_F9  Dist_div_Dirt_Thumb_F10  Dist_div_Dirt_Thumb_F11  \
+0                0.000212                 0.003601                 0.009827   
+1                0.000000                -0.003713                 0.000637   
+
+   Dist_div_Dirt_Thumb_F12  Dist_div_Dirt_Thumb_F13  Dist_div_Dirt_Thumb_F14  \
+0                      0.0                  0.00000                 0.000000   
+1                      0.0                 -0.00202                 0.000212   
+
+   Dist_div_Dirt_Thumb_F15  Dist_div_Dirt_Thumb_F16  Dist_div_Dirt_Thumb_F17  \
+0                      0.0                  0.00180                 0.000000   
+1                      0.0                  0.00202                 0.004823   
+
+   Dist_div_Dirt_Thumb_F18  Dist_div_Dirt_Thumb_F19  Dist_div_Dirt_Thumb_F20  \
+0                -0.001800                      0.0                  0.00000   
+1                 0.006133                      0.0                  0.00311   
+
+   Dist_div_Dirt_Thumb_F21  Dist_div_Dirt_Thumb_F22  Dist_div_Dirt_Thumb_F23  \
+0                 0.000424                 0.000637                 0.000000   
+1                 0.001800                 0.000637                 0.004823   
+
+   Dist_div_Dirt_Thumb_F24  Dist_div_Dirt_Thumb_F25  Dist_div_Dirt_Index_F1  \
+0                 0.009645                 0.004823               -0.006133   
+1                 0.001273                 0.000000                0.001273   
+
+   Dist_div_Dirt_Index_F2  Dist_div_Dirt_Index_F3  Dist_div_Dirt_Index_F4  \
+0               -0.002532                 0.00000                0.000637   
+1                0.004823                -0.01683               -0.002020   
+
+   Dist_div_Dirt_Index_F5  Dist_div_Dirt_Index_F6  Dist_div_Dirt_Index_F7  \
+0               -0.002020                 -0.0018                -0.00202   
+1                0.000424                  0.0018                -0.00202   
+
+   Dist_div_Dirt_Index_F8  Dist_div_Dirt_Index_F9  Dist_div_Dirt_Index_F10  \
+0                0.000212                 0.00202                -0.002020   
+1               -0.004823                 0.00000                -0.006133   
+
+   Dist_div_Dirt_Index_F11  Dist_div_Dirt_Index_F12  Dist_div_Dirt_Index_F13  \
+0                -0.006133                -0.009827                 0.001273   
+1                -0.001800                 0.001800                 0.000000   
+
+   Dist_div_Dirt_Index_F14  Dist_div_Dirt_Index_F15  Dist_div_Dirt_Index_F16  \
+0                   0.0018                  0.00000                 0.000637   
+1                   0.0000                 -0.00202                 0.000000   
+
+   Dist_div_Dirt_Index_F17  Dist_div_Dirt_Index_F18  Dist_div_Dirt_Index_F19  \
+0                 0.001910                 0.000000                 -0.00202   
+1                 0.003601                 0.009645                 -0.00180   
+
+   Dist_div_Dirt_Index_F20  Dist_div_Dirt_Index_F21  Dist_div_Dirt_Index_F22  \
+0                -0.003713                 0.000000                 0.004039   
+1                 0.000637                 0.000637                 0.000000   
+
+   Dist_div_Dirt_Index_F23  Dist_div_Dirt_Index_F24  Dist_div_Dirt_Index_F25  \
+0                -0.004524                      0.0                -0.016830   
+1                -0.003110                      0.0                 0.009827   
+
+   Dist_div_Dirt_Middle_F1  Dist_div_Dirt_Middle_F2  Dist_div_Dirt_Middle_F3  \
+0                 0.001273                -0.009827                -0.001800   
+1                -0.004823                 0.002020                -0.009827   
+
+   Dist_div_Dirt_Middle_F4  Dist_div_Dirt_Middle_F5  Dist_div_Dirt_Middle_F6  \
+0                -0.002532                 0.000212                  -0.0018   
+1                -0.001800                 0.002020                   0.0000   
+
+   Dist_div_Dirt_Middle_F7  Dist_div_Dirt_Middle_F8  Dist_div_Dirt_Middle_F9  \
+0                  0.00000                 0.002020                 0.000424   
+1                 -0.00202                -0.003601                -0.001800   
+
+   Dist_div_Dirt_Middle_F10  Dist_div_Dirt_Middle_F11  \
+0                 -0.001800                 -0.004823   
+1                 -0.005392                  0.000000   
+
+   Dist_div_Dirt_Middle_F12  Dist_div_Dirt_Middle_F13  \
+0                 -0.009827                  0.000637   
+1                  0.000637                  0.000000   
+
+   Dist_div_Dirt_Middle_F14  Dist_div_Dirt_Middle_F15  \
+0                   -0.0018                  0.000424   
+1                   -0.0018                 -0.001800   
+
+   Dist_div_Dirt_Middle_F16  Dist_div_Dirt_Middle_F17  \
+0                  0.000637                   0.00180   
+1                  0.001800                   0.00202   
+
+   Dist_div_Dirt_Middle_F18  Dist_div_Dirt_Middle_F19  \
+0                  0.000637                  0.000424   
+1                  0.005402                 -0.005402   
+
+   Dist_div_Dirt_Middle_F20  Dist_div_Dirt_Middle_F21  \
+0                   -0.0018                  0.002020   
+1                    0.0018                  0.000637   
+
+   Dist_div_Dirt_Middle_F22  Dist_div_Dirt_Middle_F23  \
+0                 -0.016830                   0.00000   
+1                  0.000637                  -0.00202   
+
+   Dist_div_Dirt_Middle_F24  Dist_div_Dirt_Middle_F25  Dist_div_Dirt_Ring_F1  \
+0                  0.013011                  0.012264                0.00000   
+1                  0.000637                  0.002020                0.00202   
+
+   Dist_div_Dirt_Ring_F2  Dist_div_Dirt_Ring_F3  Dist_div_Dirt_Ring_F4  \
+0                 0.0000              -0.001800               0.000637   
+1                 0.0018               0.006133              -0.001800   
+
+   Dist_div_Dirt_Ring_F5  Dist_div_Dirt_Ring_F6  Dist_div_Dirt_Ring_F7  \
+0               0.000000               0.000000               0.000000   
+1               0.000212               0.000212              -0.004823   
+
+   Dist_div_Dirt_Ring_F8  Dist_div_Dirt_Ring_F9  Dist_div_Dirt_Ring_F10  \
+0               0.000212               0.000424               -0.004823   
+1              -0.003601              -0.001800               -0.007770   
+
+   Dist_div_Dirt_Ring_F11  Dist_div_Dirt_Ring_F12  Dist_div_Dirt_Ring_F13  \
+0               -0.009827               -0.003669                     0.0   
+1               -0.004823                0.000212                     0.0   
+
+   Dist_div_Dirt_Ring_F14  Dist_div_Dirt_Ring_F15  Dist_div_Dirt_Ring_F16  \
+0                -0.00180                0.000212                0.000212   
+1                -0.00202               -0.004823                0.002020   
+
+   Dist_div_Dirt_Ring_F17  Dist_div_Dirt_Ring_F18  Dist_div_Dirt_Ring_F19  \
+0                 0.00180                0.001273                -0.00202   
+1                 0.00191                0.007770                 0.00000   
+
+   Dist_div_Dirt_Ring_F20  Dist_div_Dirt_Ring_F21  Dist_div_Dirt_Ring_F22  \
+0                0.000212                0.004823                0.009827   
+1               -0.002020                0.000424                0.000000   
+
+   Dist_div_Dirt_Ring_F23  Dist_div_Dirt_Ring_F24  Dist_div_Dirt_Ring_F25  \
+0                  0.0000                0.036833                0.036833   
+1                 -0.0018               -0.004823                0.000000   
+
+   Dist_div_Dirt_Pinky_F1  Dist_div_Dirt_Pinky_F2  Dist_div_Dirt_Pinky_F3  \
+0               -0.009827                  0.0000                0.000000   
+1                0.000000                  0.0018                0.009827   
+
+   Dist_div_Dirt_Pinky_F4  Dist_div_Dirt_Pinky_F5  Dist_div_Dirt_Pinky_F6  \
+0                -0.00202                  0.0018                  0.0018   
+1                 0.00000                  0.0000                  0.0000   
+
+   Dist_div_Dirt_Pinky_F7  Dist_div_Dirt_Pinky_F8  Dist_div_Dirt_Pinky_F9  \
+0                 0.00000                0.000637                0.000637   
+1                -0.01683               -0.004823               -0.006133   
+
+   Dist_div_Dirt_Pinky_F10  Dist_div_Dirt_Pinky_F11  Dist_div_Dirt_Pinky_F12  \
+0                 0.004823                -0.009827                -0.003601   
+1                -0.009645                 0.000424                -0.002020   
+
+   Dist_div_Dirt_Pinky_F13  Dist_div_Dirt_Pinky_F14  Dist_div_Dirt_Pinky_F15  \
+0                 0.000000                 0.000637                 0.000212   
+1                 0.000212                -0.003601                 0.000000   
+
+   Dist_div_Dirt_Pinky_F16  Dist_div_Dirt_Pinky_F17  Dist_div_Dirt_Pinky_F18  \
+0                 0.000212                 0.000000                 0.001800   
+1                 0.001800                 0.004823                 0.005402   
+
+   Dist_div_Dirt_Pinky_F19  Dist_div_Dirt_Pinky_F20  Dist_div_Dirt_Pinky_F21  \
+0                   0.0018                 0.000424                  0.00000   
+1                   0.0018                -0.002020                 -0.00202   
+
+   Dist_div_Dirt_Pinky_F22  Dist_div_Dirt_Pinky_F23  Dist_div_Dirt_Pinky_F24  \
+0                 0.004823                 -0.00202                -0.009827   
+1                 0.000000                 -0.00311                 0.001800   
+
+   Dist_div_Dirt_Pinky_F25  
+0                      0.0  
+1                      0.0  
+
+[2 rows x 600 columns], probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-09 11:24:19,721:INFO:Checking exceptions
+2023-02-09 11:26:22,341:INFO:Initializing predict_model()
+2023-02-09 11:26:22,356:INFO:predict_model(estimator=['Dist_Wrist_F1' 'Dist_Wrist_F2' 'Dist_Wrist_F3' 'Dist_Wrist_F4'
+ 'Dist_Wrist_F5' 'Dist_Wrist_F6' 'Dist_Wrist_F7' 'Dist_Wrist_F8'
+ 'Dist_Wrist_F9' 'Dist_Wrist_F10' 'Dist_Wrist_F11' 'Dist_Wrist_F12'
+ 'Dist_Wrist_F13' 'Dist_Wrist_F14' 'Dist_Wrist_F15' 'Dist_Wrist_F16'
+ 'Dist_Wrist_F17' 'Dist_Wrist_F18' 'Dist_Wrist_F19' 'Dist_Wrist_F20'
+ 'Dist_Wrist_F21' 'Dist_Wrist_F22' 'Dist_Wrist_F23' 'Dist_Wrist_F24'
+ 'Dist_Wrist_F25' 'Dist_Thumb_F1' 'Dist_Thumb_F2' 'Dist_Thumb_F3'
+ 'Dist_Thumb_F4' 'Dist_Thumb_F5' 'Dist_Thumb_F6' 'Dist_Thumb_F7'
+ 'Dist_Thumb_F8' 'Dist_Thumb_F9' 'Dist_Thumb_F10' 'Dist_Thumb_F11'
+ 'Dist_Thumb_F12' 'Dist_Thumb_F13' 'Dist_Thumb_F14' 'Dist_Thumb_F15'
+ 'Dist_Thumb_F16' 'Dist_Thumb_F17' 'Dist_Thumb_F18' 'Dist_Thumb_F19'
+ 'Dist_Thumb_F20' 'Dist_Thumb_F21' 'Dist_Thumb_F22' 'Dist_Thumb_F23'
+ 'Dist_Thumb_F24' 'Dist_Thumb_F25' 'Dist_Index_F1' 'Dist_Index_F2'
+ 'Dist_Index_F3' 'Dist_Index_F4' 'Dist_Index_F5' 'Dist_Index_F6'
+ 'Dist_Index_F7' 'Dist_Index_F8' 'Dist_Index_F9' 'Dist_Index_F10'
+ 'Dist_Index_F11' 'Dist_Index_F12' 'Dist_Index_F13' 'Dist_Index_F14'
+ 'Dist_Index_F15' 'Dist_Index_F16' 'Dist_Index_F17' 'Dist_Index_F18'
+ 'Dist_Index_F19' 'Dist_Index_F20' 'Dist_Index_F21' 'Dist_Index_F22'
+ 'Dist_Index_F23' 'Dist_Index_F24' 'Dist_Index_F25' 'Dist_Middle_F1'
+ 'Dist_Middle_F2' 'Dist_Middle_F3' 'Dist_Middle_F4' 'Dist_Middle_F5'
+ 'Dist_Middle_F6' 'Dist_Middle_F7' 'Dist_Middle_F8' 'Dist_Middle_F9'
+ 'Dist_Middle_F10' 'Dist_Middle_F11' 'Dist_Middle_F12' 'Dist_Middle_F13'
+ 'Dist_Middle_F14' 'Dist_Middle_F15' 'Dist_Middle_F16' 'Dist_Middle_F17'
+ 'Dist_Middle_F18' 'Dist_Middle_F19' 'Dist_Middle_F20' 'Dist_Middle_F21'
+ 'Dist_Middle_F22' 'Dist_Middle_F23' 'Dist_Middle_F24' 'Dist_Middle_F25'
+ 'Dist_Ring_F1' 'Dist_Ring_F2' 'Dist_Ring_F3' 'Dist_Ring_F4'
+ 'Dist_Ring_F5' 'Dist_Ring_F6' 'Dist_Ring_F7' 'Dist_Ring_F8'
+ 'Dist_Ring_F9' 'Dist_Ring_F10' 'Dist_Ring_F11' 'Dist_Ring_F12'
+ 'Dist_Ring_F13' 'Dist_Ring_F14' 'Dist_Ring_F15' 'Dist_Ring_F16'
+ 'Dist_Ring_F17' 'Dist_Ring_F18' 'Dist_Ring_F19' 'Dist_Ring_F20'
+ 'Dist_Ring_F21' 'Dist_Ring_F22' 'Dist_Ring_F23' 'Dist_Ring_F24'
+ 'Dist_Ring_F25' 'Dist_Pinky_F1' 'Dist_Pinky_F2' 'Dist_Pinky_F3'
+ 'Dist_Pinky_F4' 'Dist_Pinky_F5' 'Dist_Pinky_F6' 'Dist_Pinky_F7'
+ 'Dist_Pinky_F8' 'Dist_Pinky_F9' 'Dist_Pinky_F10' 'Dist_Pinky_F11'
+ 'Dist_Pinky_F12' 'Dist_Pinky_F13' 'Dist_Pinky_F14' 'Dist_Pinky_F15'
+ 'Dist_Pinky_F16' 'Dist_Pinky_F17' 'Dist_Pinky_F18' 'Dist_Pinky_F19'
+ 'Dist_Pinky_F20' 'Dist_Pinky_F21' 'Dist_Pinky_F22' 'Dist_Pinky_F23'
+ 'Dist_Pinky_F24' 'Dist_Pinky_F25' 'Dirt_Wrist_F1' 'Dirt_Wrist_F2'
+ 'Dirt_Wrist_F3' 'Dirt_Wrist_F4' 'Dirt_Wrist_F5' 'Dirt_Wrist_F6'
+ 'Dirt_Wrist_F7' 'Dirt_Wrist_F8' 'Dirt_Wrist_F9' 'Dirt_Wrist_F10'
+ 'Dirt_Wrist_F11' 'Dirt_Wrist_F12' 'Dirt_Wrist_F13' 'Dirt_Wrist_F14'
+ 'Dirt_Wrist_F15' 'Dirt_Wrist_F16' 'Dirt_Wrist_F17' 'Dirt_Wrist_F18'
+ 'Dirt_Wrist_F19' 'Dirt_Wrist_F20' 'Dirt_Wrist_F21' 'Dirt_Wrist_F22'
+ 'Dirt_Wrist_F23' 'Dirt_Wrist_F24' 'Dirt_Wrist_F25' 'Dirt_Thumb_F1'
+ 'Dirt_Thumb_F2' 'Dirt_Thumb_F3' 'Dirt_Thumb_F4' 'Dirt_Thumb_F5'
+ 'Dirt_Thumb_F6' 'Dirt_Thumb_F7' 'Dirt_Thumb_F8' 'Dirt_Thumb_F9'
+ 'Dirt_Thumb_F10' 'Dirt_Thumb_F11' 'Dirt_Thumb_F12' 'Dirt_Thumb_F13'
+ 'Dirt_Thumb_F14' 'Dirt_Thumb_F15' 'Dirt_Thumb_F16' 'Dirt_Thumb_F17'
+ 'Dirt_Thumb_F18' 'Dirt_Thumb_F19' 'Dirt_Thumb_F20' 'Dirt_Thumb_F21'
+ 'Dirt_Thumb_F22' 'Dirt_Thumb_F23' 'Dirt_Thumb_F24' 'Dirt_Thumb_F25'
+ 'Dirt_Index_F1' 'Dirt_Index_F2' 'Dirt_Index_F3' 'Dirt_Index_F4'
+ 'Dirt_Index_F5' 'Dirt_Index_F6' 'Dirt_Index_F7' 'Dirt_Index_F8'
+ 'Dirt_Index_F9' 'Dirt_Index_F10' 'Dirt_Index_F11' 'Dirt_Index_F12'
+ 'Dirt_Index_F13' 'Dirt_Index_F14' 'Dirt_Index_F15' 'Dirt_Index_F16'
+ 'Dirt_Index_F17' 'Dirt_Index_F18' 'Dirt_Index_F19' 'Dirt_Index_F20'
+ 'Dirt_Index_F21' 'Dirt_Index_F22' 'Dirt_Index_F23' 'Dirt_Index_F24'
+ 'Dirt_Index_F25' 'Dirt_Middle_F1' 'Dirt_Middle_F2' 'Dirt_Middle_F3'
+ 'Dirt_Middle_F4' 'Dirt_Middle_F5' 'Dirt_Middle_F6' 'Dirt_Middle_F7'
+ 'Dirt_Middle_F8' 'Dirt_Middle_F9' 'Dirt_Middle_F10' 'Dirt_Middle_F11'
+ 'Dirt_Middle_F12' 'Dirt_Middle_F13' 'Dirt_Middle_F14' 'Dirt_Middle_F15'
+ 'Dirt_Middle_F16' 'Dirt_Middle_F17' 'Dirt_Middle_F18' 'Dirt_Middle_F19'
+ 'Dirt_Middle_F20' 'Dirt_Middle_F21' 'Dirt_Middle_F22' 'Dirt_Middle_F23'
+ 'Dirt_Middle_F24' 'Dirt_Middle_F25' 'Dirt_Ring_F1' 'Dirt_Ring_F2'
+ 'Dirt_Ring_F3' 'Dirt_Ring_F4' 'Dirt_Ring_F5' 'Dirt_Ring_F6'
+ 'Dirt_Ring_F7' 'Dirt_Ring_F8' 'Dirt_Ring_F9' 'Dirt_Ring_F10'
+ 'Dirt_Ring_F11' 'Dirt_Ring_F12' 'Dirt_Ring_F13' 'Dirt_Ring_F14'
+ 'Dirt_Ring_F15' 'Dirt_Ring_F16' 'Dirt_Ring_F17' 'Dirt_Ring_F18'
+ 'Dirt_Ring_F19' 'Dirt_Ring_F20' 'Dirt_Ring_F21' 'Dirt_Ring_F22'
+ 'Dirt_Ring_F23' 'Dirt_Ring_F24' 'Dirt_Ring_F25' 'Dirt_Pinky_F1'
+ 'Dirt_Pinky_F2' 'Dirt_Pinky_F3' 'Dirt_Pinky_F4' 'Dirt_Pinky_F5'
+ 'Dirt_Pinky_F6' 'Dirt_Pinky_F7' 'Dirt_Pinky_F8' 'Dirt_Pinky_F9'
+ 'Dirt_Pinky_F10' 'Dirt_Pinky_F11' 'Dirt_Pinky_F12' 'Dirt_Pinky_F13'
+ 'Dirt_Pinky_F14' 'Dirt_Pinky_F15' 'Dirt_Pinky_F16' 'Dirt_Pinky_F17'
+ 'Dirt_Pinky_F18' 'Dirt_Pinky_F19' 'Dirt_Pinky_F20' 'Dirt_Pinky_F21'
+ 'Dirt_Pinky_F22' 'Dirt_Pinky_F23' 'Dirt_Pinky_F24' 'Dirt_Pinky_F25'
+ 'Dist_mul_Dirt_Wrist_F1' 'Dist_mul_Dirt_Wrist_F2'
+ 'Dist_mul_Dirt_Wrist_F3' 'Dist_mul_Dirt_Wrist_F4'
+ 'Dist_mul_Dirt_Wrist_F5' 'Dist_mul_Dirt_Wrist_F6'
+ 'Dist_mul_Dirt_Wrist_F7' 'Dist_mul_Dirt_Wrist_F8'
+ 'Dist_mul_Dirt_Wrist_F9' 'Dist_mul_Dirt_Wrist_F10'
+ 'Dist_mul_Dirt_Wrist_F11' 'Dist_mul_Dirt_Wrist_F12'
+ 'Dist_mul_Dirt_Wrist_F13' 'Dist_mul_Dirt_Wrist_F14'
+ 'Dist_mul_Dirt_Wrist_F15' 'Dist_mul_Dirt_Wrist_F16'
+ 'Dist_mul_Dirt_Wrist_F17' 'Dist_mul_Dirt_Wrist_F18'
+ 'Dist_mul_Dirt_Wrist_F19' 'Dist_mul_Dirt_Wrist_F20'
+ 'Dist_mul_Dirt_Wrist_F21' 'Dist_mul_Dirt_Wrist_F22'
+ 'Dist_mul_Dirt_Wrist_F23' 'Dist_mul_Dirt_Wrist_F24'
+ 'Dist_mul_Dirt_Wrist_F25' 'Dist_mul_Dirt_Thumb_F1'
+ 'Dist_mul_Dirt_Thumb_F2' 'Dist_mul_Dirt_Thumb_F3'
+ 'Dist_mul_Dirt_Thumb_F4' 'Dist_mul_Dirt_Thumb_F5'
+ 'Dist_mul_Dirt_Thumb_F6' 'Dist_mul_Dirt_Thumb_F7'
+ 'Dist_mul_Dirt_Thumb_F8' 'Dist_mul_Dirt_Thumb_F9'
+ 'Dist_mul_Dirt_Thumb_F10' 'Dist_mul_Dirt_Thumb_F11'
+ 'Dist_mul_Dirt_Thumb_F12' 'Dist_mul_Dirt_Thumb_F13'
+ 'Dist_mul_Dirt_Thumb_F14' 'Dist_mul_Dirt_Thumb_F15'
+ 'Dist_mul_Dirt_Thumb_F16' 'Dist_mul_Dirt_Thumb_F17'
+ 'Dist_mul_Dirt_Thumb_F18' 'Dist_mul_Dirt_Thumb_F19'
+ 'Dist_mul_Dirt_Thumb_F20' 'Dist_mul_Dirt_Thumb_F21'
+ 'Dist_mul_Dirt_Thumb_F22' 'Dist_mul_Dirt_Thumb_F23'
+ 'Dist_mul_Dirt_Thumb_F24' 'Dist_mul_Dirt_Thumb_F25'
+ 'Dist_mul_Dirt_Index_F1' 'Dist_mul_Dirt_Index_F2'
+ 'Dist_mul_Dirt_Index_F3' 'Dist_mul_Dirt_Index_F4'
+ 'Dist_mul_Dirt_Index_F5' 'Dist_mul_Dirt_Index_F6'
+ 'Dist_mul_Dirt_Index_F7' 'Dist_mul_Dirt_Index_F8'
+ 'Dist_mul_Dirt_Index_F9' 'Dist_mul_Dirt_Index_F10'
+ 'Dist_mul_Dirt_Index_F11' 'Dist_mul_Dirt_Index_F12'
+ 'Dist_mul_Dirt_Index_F13' 'Dist_mul_Dirt_Index_F14'
+ 'Dist_mul_Dirt_Index_F15' 'Dist_mul_Dirt_Index_F16'
+ 'Dist_mul_Dirt_Index_F17' 'Dist_mul_Dirt_Index_F18'
+ 'Dist_mul_Dirt_Index_F19' 'Dist_mul_Dirt_Index_F20'
+ 'Dist_mul_Dirt_Index_F21' 'Dist_mul_Dirt_Index_F22'
+ 'Dist_mul_Dirt_Index_F23' 'Dist_mul_Dirt_Index_F24'
+ 'Dist_mul_Dirt_Index_F25' 'Dist_mul_Dirt_Middle_F1'
+ 'Dist_mul_Dirt_Middle_F2' 'Dist_mul_Dirt_Middle_F3'
+ 'Dist_mul_Dirt_Middle_F4' 'Dist_mul_Dirt_Middle_F5'
+ 'Dist_mul_Dirt_Middle_F6' 'Dist_mul_Dirt_Middle_F7'
+ 'Dist_mul_Dirt_Middle_F8' 'Dist_mul_Dirt_Middle_F9'
+ 'Dist_mul_Dirt_Middle_F10' 'Dist_mul_Dirt_Middle_F11'
+ 'Dist_mul_Dirt_Middle_F12' 'Dist_mul_Dirt_Middle_F13'
+ 'Dist_mul_Dirt_Middle_F14' 'Dist_mul_Dirt_Middle_F15'
+ 'Dist_mul_Dirt_Middle_F16' 'Dist_mul_Dirt_Middle_F17'
+ 'Dist_mul_Dirt_Middle_F18' 'Dist_mul_Dirt_Middle_F19'
+ 'Dist_mul_Dirt_Middle_F20' 'Dist_mul_Dirt_Middle_F21'
+ 'Dist_mul_Dirt_Middle_F22' 'Dist_mul_Dirt_Middle_F23'
+ 'Dist_mul_Dirt_Middle_F24' 'Dist_mul_Dirt_Middle_F25'
+ 'Dist_mul_Dirt_Ring_F1' 'Dist_mul_Dirt_Ring_F2' 'Dist_mul_Dirt_Ring_F3'
+ 'Dist_mul_Dirt_Ring_F4' 'Dist_mul_Dirt_Ring_F5' 'Dist_mul_Dirt_Ring_F6'
+ 'Dist_mul_Dirt_Ring_F7' 'Dist_mul_Dirt_Ring_F8' 'Dist_mul_Dirt_Ring_F9'
+ 'Dist_mul_Dirt_Ring_F10' 'Dist_mul_Dirt_Ring_F11'
+ 'Dist_mul_Dirt_Ring_F12' 'Dist_mul_Dirt_Ring_F13'
+ 'Dist_mul_Dirt_Ring_F14' 'Dist_mul_Dirt_Ring_F15'
+ 'Dist_mul_Dirt_Ring_F16' 'Dist_mul_Dirt_Ring_F17'
+ 'Dist_mul_Dirt_Ring_F18' 'Dist_mul_Dirt_Ring_F19'
+ 'Dist_mul_Dirt_Ring_F20' 'Dist_mul_Dirt_Ring_F21'
+ 'Dist_mul_Dirt_Ring_F22' 'Dist_mul_Dirt_Ring_F23'
+ 'Dist_mul_Dirt_Ring_F24' 'Dist_mul_Dirt_Ring_F25'
+ 'Dist_mul_Dirt_Pinky_F1' 'Dist_mul_Dirt_Pinky_F2'
+ 'Dist_mul_Dirt_Pinky_F3' 'Dist_mul_Dirt_Pinky_F4'
+ 'Dist_mul_Dirt_Pinky_F5' 'Dist_mul_Dirt_Pinky_F6'
+ 'Dist_mul_Dirt_Pinky_F7' 'Dist_mul_Dirt_Pinky_F8'
+ 'Dist_mul_Dirt_Pinky_F9' 'Dist_mul_Dirt_Pinky_F10'
+ 'Dist_mul_Dirt_Pinky_F11' 'Dist_mul_Dirt_Pinky_F12'
+ 'Dist_mul_Dirt_Pinky_F13' 'Dist_mul_Dirt_Pinky_F14'
+ 'Dist_mul_Dirt_Pinky_F15' 'Dist_mul_Dirt_Pinky_F16'
+ 'Dist_mul_Dirt_Pinky_F17' 'Dist_mul_Dirt_Pinky_F18'
+ 'Dist_mul_Dirt_Pinky_F19' 'Dist_mul_Dirt_Pinky_F20'
+ 'Dist_mul_Dirt_Pinky_F21' 'Dist_mul_Dirt_Pinky_F22'
+ 'Dist_mul_Dirt_Pinky_F23' 'Dist_mul_Dirt_Pinky_F24'
+ 'Dist_mul_Dirt_Pinky_F25' 'Dist_div_Dirt_Wrist_F1'
+ 'Dist_div_Dirt_Wrist_F2' 'Dist_div_Dirt_Wrist_F3'
+ 'Dist_div_Dirt_Wrist_F4' 'Dist_div_Dirt_Wrist_F5'
+ 'Dist_div_Dirt_Wrist_F6' 'Dist_div_Dirt_Wrist_F7'
+ 'Dist_div_Dirt_Wrist_F8' 'Dist_div_Dirt_Wrist_F9'
+ 'Dist_div_Dirt_Wrist_F10' 'Dist_div_Dirt_Wrist_F11'
+ 'Dist_div_Dirt_Wrist_F12' 'Dist_div_Dirt_Wrist_F13'
+ 'Dist_div_Dirt_Wrist_F14' 'Dist_div_Dirt_Wrist_F15'
+ 'Dist_div_Dirt_Wrist_F16' 'Dist_div_Dirt_Wrist_F17'
+ 'Dist_div_Dirt_Wrist_F18' 'Dist_div_Dirt_Wrist_F19'
+ 'Dist_div_Dirt_Wrist_F20' 'Dist_div_Dirt_Wrist_F21'
+ 'Dist_div_Dirt_Wrist_F22' 'Dist_div_Dirt_Wrist_F23'
+ 'Dist_div_Dirt_Wrist_F24' 'Dist_div_Dirt_Wrist_F25'
+ 'Dist_div_Dirt_Thumb_F1' 'Dist_div_Dirt_Thumb_F2'
+ 'Dist_div_Dirt_Thumb_F3' 'Dist_div_Dirt_Thumb_F4'
+ 'Dist_div_Dirt_Thumb_F5' 'Dist_div_Dirt_Thumb_F6'
+ 'Dist_div_Dirt_Thumb_F7' 'Dist_div_Dirt_Thumb_F8'
+ 'Dist_div_Dirt_Thumb_F9' 'Dist_div_Dirt_Thumb_F10'
+ 'Dist_div_Dirt_Thumb_F11' 'Dist_div_Dirt_Thumb_F12'
+ 'Dist_div_Dirt_Thumb_F13' 'Dist_div_Dirt_Thumb_F14'
+ 'Dist_div_Dirt_Thumb_F15' 'Dist_div_Dirt_Thumb_F16'
+ 'Dist_div_Dirt_Thumb_F17' 'Dist_div_Dirt_Thumb_F18'
+ 'Dist_div_Dirt_Thumb_F19' 'Dist_div_Dirt_Thumb_F20'
+ 'Dist_div_Dirt_Thumb_F21' 'Dist_div_Dirt_Thumb_F22'
+ 'Dist_div_Dirt_Thumb_F23' 'Dist_div_Dirt_Thumb_F24'
+ 'Dist_div_Dirt_Thumb_F25' 'Dist_div_Dirt_Index_F1'
+ 'Dist_div_Dirt_Index_F2' 'Dist_div_Dirt_Index_F3'
+ 'Dist_div_Dirt_Index_F4' 'Dist_div_Dirt_Index_F5'
+ 'Dist_div_Dirt_Index_F6' 'Dist_div_Dirt_Index_F7'
+ 'Dist_div_Dirt_Index_F8' 'Dist_div_Dirt_Index_F9'
+ 'Dist_div_Dirt_Index_F10' 'Dist_div_Dirt_Index_F11'
+ 'Dist_div_Dirt_Index_F12' 'Dist_div_Dirt_Index_F13'
+ 'Dist_div_Dirt_Index_F14' 'Dist_div_Dirt_Index_F15'
+ 'Dist_div_Dirt_Index_F16' 'Dist_div_Dirt_Index_F17'
+ 'Dist_div_Dirt_Index_F18' 'Dist_div_Dirt_Index_F19'
+ 'Dist_div_Dirt_Index_F20' 'Dist_div_Dirt_Index_F21'
+ 'Dist_div_Dirt_Index_F22' 'Dist_div_Dirt_Index_F23'
+ 'Dist_div_Dirt_Index_F24' 'Dist_div_Dirt_Index_F25'
+ 'Dist_div_Dirt_Middle_F1' 'Dist_div_Dirt_Middle_F2'
+ 'Dist_div_Dirt_Middle_F3' 'Dist_div_Dirt_Middle_F4'
+ 'Dist_div_Dirt_Middle_F5' 'Dist_div_Dirt_Middle_F6'
+ 'Dist_div_Dirt_Middle_F7' 'Dist_div_Dirt_Middle_F8'
+ 'Dist_div_Dirt_Middle_F9' 'Dist_div_Dirt_Middle_F10'
+ 'Dist_div_Dirt_Middle_F11' 'Dist_div_Dirt_Middle_F12'
+ 'Dist_div_Dirt_Middle_F13' 'Dist_div_Dirt_Middle_F14'
+ 'Dist_div_Dirt_Middle_F15' 'Dist_div_Dirt_Middle_F16'
+ 'Dist_div_Dirt_Middle_F17' 'Dist_div_Dirt_Middle_F18'
+ 'Dist_div_Dirt_Middle_F19' 'Dist_div_Dirt_Middle_F20'
+ 'Dist_div_Dirt_Middle_F21' 'Dist_div_Dirt_Middle_F22'
+ 'Dist_div_Dirt_Middle_F23' 'Dist_div_Dirt_Middle_F24'
+ 'Dist_div_Dirt_Middle_F25' 'Dist_div_Dirt_Ring_F1'
+ 'Dist_div_Dirt_Ring_F2' 'Dist_div_Dirt_Ring_F3' 'Dist_div_Dirt_Ring_F4'
+ 'Dist_div_Dirt_Ring_F5' 'Dist_div_Dirt_Ring_F6' 'Dist_div_Dirt_Ring_F7'
+ 'Dist_div_Dirt_Ring_F8' 'Dist_div_Dirt_Ring_F9' 'Dist_div_Dirt_Ring_F10'
+ 'Dist_div_Dirt_Ring_F11' 'Dist_div_Dirt_Ring_F12'
+ 'Dist_div_Dirt_Ring_F13' 'Dist_div_Dirt_Ring_F14'
+ 'Dist_div_Dirt_Ring_F15' 'Dist_div_Dirt_Ring_F16'
+ 'Dist_div_Dirt_Ring_F17' 'Dist_div_Dirt_Ring_F18'
+ 'Dist_div_Dirt_Ring_F19' 'Dist_div_Dirt_Ring_F20'
+ 'Dist_div_Dirt_Ring_F21' 'Dist_div_Dirt_Ring_F22'
+ 'Dist_div_Dirt_Ring_F23' 'Dist_div_Dirt_Ring_F24'
+ 'Dist_div_Dirt_Ring_F25' 'Dist_div_Dirt_Pinky_F1'
+ 'Dist_div_Dirt_Pinky_F2' 'Dist_div_Dirt_Pinky_F3'
+ 'Dist_div_Dirt_Pinky_F4' 'Dist_div_Dirt_Pinky_F5'
+ 'Dist_div_Dirt_Pinky_F6' 'Dist_div_Dirt_Pinky_F7'
+ 'Dist_div_Dirt_Pinky_F8' 'Dist_div_Dirt_Pinky_F9'
+ 'Dist_div_Dirt_Pinky_F10' 'Dist_div_Dirt_Pinky_F11'
+ 'Dist_div_Dirt_Pinky_F12' 'Dist_div_Dirt_Pinky_F13'
+ 'Dist_div_Dirt_Pinky_F14' 'Dist_div_Dirt_Pinky_F15'
+ 'Dist_div_Dirt_Pinky_F16' 'Dist_div_Dirt_Pinky_F17'
+ 'Dist_div_Dirt_Pinky_F18' 'Dist_div_Dirt_Pinky_F19'
+ 'Dist_div_Dirt_Pinky_F20' 'Dist_div_Dirt_Pinky_F21'
+ 'Dist_div_Dirt_Pinky_F22' 'Dist_div_Dirt_Pinky_F23'
+ 'Dist_div_Dirt_Pinky_F24' 'Dist_div_Dirt_Pinky_F25'], probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-09 11:26:22,364:INFO:Checking exceptions
+2023-02-09 11:26:22,366:INFO:Preloading libraries
+2023-02-09 11:26:22,397:ERROR:Pipeline not found. Exception:
+2023-02-09 11:26:22,404:ERROR:Traceback (most recent call last):
+  File "C:\Users\nassa\AppData\Roaming\Python\Python38\site-packages\pycaret\internal\tabular.py", line 9044, in predict_model
+    dtypes = prep_pipe.named_steps["dtypes"]
+NameError: name 'prep_pipe' is not defined
+
+2023-02-09 11:31:26,623:INFO:Initializing load_model()
+2023-02-09 11:31:26,630:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-09 11:51:38,086:INFO:Initializing load_model()
+2023-02-09 11:51:38,094:INFO:load_model(model_name=parkinson_lightgbm_model.pkl, platform=None, authentication=None, verbose=True)
+2023-02-09 11:52:00,100:INFO:Initializing load_model()
+2023-02-09 11:52:00,103:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-09 12:06:56,320:INFO:Initializing load_model()
+2023-02-09 12:06:56,327:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-09 12:41:00,708:INFO:Initializing load_model()
+2023-02-09 12:41:00,711:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-09 12:42:22,895:INFO:Initializing load_model()
+2023-02-09 12:42:22,897:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-09 13:05:46,607:INFO:Initializing load_model()
+2023-02-09 13:05:46,622:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-09 13:10:02,049:INFO:Initializing load_model()
+2023-02-09 13:10:02,056:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-09 13:12:35,102:INFO:Initializing load_model()
+2023-02-09 13:12:35,103:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-09 13:16:07,070:INFO:Initializing load_model()
+2023-02-09 13:16:07,072:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-09 13:35:13,239:INFO:Initializing load_model()
+2023-02-09 13:35:13,242:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-09 13:47:06,794:INFO:Initializing load_model()
+2023-02-09 13:47:06,796:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-09 13:47:06,905:INFO:Initializing predict_model()
+2023-02-09 13:47:06,906:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-09 13:47:06,908:INFO:Checking exceptions
+2023-02-09 13:47:06,909:INFO:Preloading libraries
+2023-02-09 13:49:59,353:INFO:Initializing load_model()
+2023-02-09 13:49:59,357:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-09 13:49:59,434:INFO:Initializing predict_model()
+2023-02-09 13:49:59,435:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-09 13:49:59,437:INFO:Checking exceptions
+2023-02-09 13:49:59,438:INFO:Preloading libraries
+2023-02-09 13:51:10,614:INFO:Initializing load_model()
+2023-02-09 13:51:10,615:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-09 13:51:10,709:INFO:Initializing predict_model()
+2023-02-09 13:51:10,711:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-09 13:51:10,716:INFO:Checking exceptions
+2023-02-09 13:51:10,717:INFO:Preloading libraries
+2023-02-10 20:07:46,035:INFO:Initializing load_model()
+2023-02-10 20:07:46,039:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-10 20:07:46,164:INFO:Initializing predict_model()
+2023-02-10 20:07:46,165:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-10 20:07:46,168:INFO:Checking exceptions
+2023-02-10 20:07:46,168:INFO:Preloading libraries
+2023-02-10 20:08:26,840:INFO:Initializing load_model()
+2023-02-10 20:08:26,840:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-10 20:08:26,913:INFO:Initializing predict_model()
+2023-02-10 20:08:26,914:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-10 20:08:26,917:INFO:Checking exceptions
+2023-02-10 20:08:26,918:INFO:Preloading libraries
+2023-02-10 20:08:44,834:INFO:Initializing load_model()
+2023-02-10 20:08:44,834:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-10 20:08:44,902:INFO:Initializing predict_model()
+2023-02-10 20:08:44,902:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-10 20:08:44,906:INFO:Checking exceptions
+2023-02-10 20:08:44,910:INFO:Preloading libraries
+2023-02-10 20:09:02,550:INFO:Initializing load_model()
+2023-02-10 20:09:02,550:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-10 20:09:02,609:INFO:Initializing predict_model()
+2023-02-10 20:09:02,610:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-10 20:09:02,612:INFO:Checking exceptions
+2023-02-10 20:09:02,614:INFO:Preloading libraries
+2023-02-10 20:09:21,918:INFO:Initializing load_model()
+2023-02-10 20:09:21,918:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-10 20:09:21,981:INFO:Initializing predict_model()
+2023-02-10 20:09:21,982:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-10 20:09:21,989:INFO:Checking exceptions
+2023-02-10 20:09:21,990:INFO:Preloading libraries
+2023-02-10 20:09:39,043:INFO:Initializing load_model()
+2023-02-10 20:09:39,043:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-10 20:09:39,112:INFO:Initializing predict_model()
+2023-02-10 20:09:39,112:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-10 20:09:39,114:INFO:Checking exceptions
+2023-02-10 20:09:39,116:INFO:Preloading libraries
+2023-02-10 20:10:11,634:INFO:Initializing load_model()
+2023-02-10 20:10:11,635:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-10 20:10:11,695:INFO:Initializing predict_model()
+2023-02-10 20:10:11,696:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-10 20:10:11,700:INFO:Checking exceptions
+2023-02-10 20:10:11,701:INFO:Preloading libraries
+2023-02-11 13:26:37,814:INFO:Initializing load_model()
+2023-02-11 13:26:37,818:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-11 13:26:37,915:INFO:Initializing predict_model()
+2023-02-11 13:26:37,916:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-11 13:26:37,917:INFO:Checking exceptions
+2023-02-11 13:26:37,919:INFO:Preloading libraries
+2023-02-11 13:28:05,805:INFO:Initializing load_model()
+2023-02-11 13:28:05,805:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-11 13:28:05,857:INFO:Initializing predict_model()
+2023-02-11 13:28:05,858:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-11 13:28:05,859:INFO:Checking exceptions
+2023-02-11 13:28:05,861:INFO:Preloading libraries
+2023-02-11 13:31:11,999:INFO:Initializing load_model()
+2023-02-11 13:31:12,000:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-11 13:31:12,059:INFO:Initializing predict_model()
+2023-02-11 13:31:12,060:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-11 13:31:12,062:INFO:Checking exceptions
+2023-02-11 13:31:12,063:INFO:Preloading libraries
+2023-02-11 13:31:31,231:INFO:Initializing load_model()
+2023-02-11 13:31:31,232:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-11 13:31:31,285:INFO:Initializing predict_model()
+2023-02-11 13:31:31,285:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-11 13:31:31,287:INFO:Checking exceptions
+2023-02-11 13:31:31,289:INFO:Preloading libraries
+2023-02-11 13:31:56,462:INFO:Initializing load_model()
+2023-02-11 13:31:56,463:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-11 13:31:56,514:INFO:Initializing predict_model()
+2023-02-11 13:31:56,514:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-11 13:31:56,517:INFO:Checking exceptions
+2023-02-11 13:31:56,518:INFO:Preloading libraries
+2023-02-11 13:32:27,330:INFO:Initializing load_model()
+2023-02-11 13:32:27,330:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-11 13:32:27,385:INFO:Initializing predict_model()
+2023-02-11 13:32:27,385:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-11 13:32:27,387:INFO:Checking exceptions
+2023-02-11 13:32:27,388:INFO:Preloading libraries
+2023-02-11 13:32:50,292:INFO:Initializing load_model()
+2023-02-11 13:32:50,292:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-11 13:32:50,344:INFO:Initializing predict_model()
+2023-02-11 13:32:50,345:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-11 13:32:50,346:INFO:Checking exceptions
+2023-02-11 13:32:50,346:INFO:Preloading libraries
+2023-02-11 13:34:29,034:INFO:Initializing load_model()
+2023-02-11 13:34:29,035:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-11 13:34:29,089:INFO:Initializing predict_model()
+2023-02-11 13:34:29,089:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-11 13:34:29,091:INFO:Checking exceptions
+2023-02-11 13:34:29,091:INFO:Preloading libraries
+2023-02-11 13:37:13,929:INFO:Initializing load_model()
+2023-02-11 13:37:13,930:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-11 13:37:13,985:INFO:Initializing predict_model()
+2023-02-11 13:37:13,986:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-11 13:37:13,987:INFO:Checking exceptions
+2023-02-11 13:37:13,988:INFO:Preloading libraries
+2023-02-11 13:37:49,029:INFO:Initializing load_model()
+2023-02-11 13:37:49,030:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-11 13:37:49,086:INFO:Initializing predict_model()
+2023-02-11 13:37:49,087:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-11 13:37:49,088:INFO:Checking exceptions
+2023-02-11 13:37:49,088:INFO:Preloading libraries
+2023-02-11 13:38:03,199:INFO:Initializing load_model()
+2023-02-11 13:38:03,200:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-11 13:38:03,250:INFO:Initializing predict_model()
+2023-02-11 13:38:03,250:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-11 13:38:03,251:INFO:Checking exceptions
+2023-02-11 13:38:03,254:INFO:Preloading libraries
+2023-02-11 13:38:30,806:INFO:Initializing load_model()
+2023-02-11 13:38:30,806:INFO:load_model(model_name=parkinson_lightgbm_model, platform=None, authentication=None, verbose=True)
+2023-02-11 13:38:30,856:INFO:Initializing predict_model()
+2023-02-11 13:38:30,857:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='Case')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Case')),
+                ('fix_perfect', Remove_100(target='Case')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model', LGBMClassifier(random_state=123)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-02-11 13:38:30,858:INFO:Checking exceptions
+2023-02-11 13:38:30,858:INFO:Preloading libraries
